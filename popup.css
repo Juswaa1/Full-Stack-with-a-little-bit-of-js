@@ -1,0 +1,90 @@
+#myImg, #myImg1, .clickable {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover, #myImg1:hover, .clickable:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 200px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 91%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  margin-top: 100px;
+ 
+}
+
+.modal img {
+  max-width: 60%;
+  max-height: 60%;
+  margin: auto;
+  display: block;
+  animation: zoom 0.6s ease;
+}
+
+#caption {
+  color: #ccc;
+  margin-top: 10px;
+  animation: zoom 0.6s ease;
+  text-align: center;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.close, .close1 {
+  position: absolute;
+  top: 100px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.close:hover, .close:focus,
+.close1:hover, .close1:focus {
+  color: #bbb;
+  text-decoration: none;
+}
+
+@keyframes zoom {
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .modal{
+     height: 96%;
+    
+  }
+
+
+
+  .modal img {
+    width: 100%;
+    margin-top: 100px;
+  
+  
+  }
+
+
+  .close, .close1 {
+  position: absolute;
+  top: 150px;
+  
+ 
+  }
+}

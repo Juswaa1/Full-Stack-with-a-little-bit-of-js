@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    scroll-behavior: smooth;
+}
+
+/* Upper */
+.navbar {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(banner.jpg);
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 62px 15px;
+    z-index: 1000;
+    transition: all 2s;
+    animation: fadeIn 1.5s ease-out forwards;
+
+   
+}
+.navbar:hover{
+    background-image: url(cut1.gif);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.icon {
+    margin-left: 20px;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    border-radius: 10%;
+    padding: 5px;
+    background-image: url(Josh.png);
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    border-radius: 10%;
+    background-color: orange;
+    padding: 8%;
+  
+}
+
+.links li {
+    margin: 0px 15px;
+   
+}
+
+.links a:hover, .icon:hover  {
+    transform: scale(1.1);
+    color: blue;
+ 
+}
+
+/* Body */
+
+header {
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 10px solid black;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    animation: fadeIn 1.5s ease-out forwards;
+    box-shadow: 5px solid rgb(0, 0, 0);
+    padding: 60px 10px;
+    background-image: url(backround.png);
+    width: 100%;
+    background-position: center;
+    background-image: cover;
+   
+}
+
+.box-layout,
+.box-layout2,
+.box-layout3,
+.box-layout4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #262f8c;
+    padding: 50px;
+    border-radius: 8px;
+    width: 300px;
+    height: 300px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    margin: 50px auto;
+}
+
+.box-layout h3, .box-layout p,
+.box-layout2 h3, .box-layout2 p,
+.box-layout3 h3, .box-layout3 p,
+.box-layout4 h3, .box-layout4 p {
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+}
+
+
+.box-layout:hover {
+    transform: translate(20px, -20px);
+}
+
+.box-layout2:hover {
+    transform: translate(20px, -20px);
+}
+
+.box-layout3:hover {
+    transform: translate(20px, -20px);
+}
+
+.box-layout4:hover {
+    transform: translate(20px, -20px);
+}
+
+
+/* For Responsiveness */
+@media (max-width: 768px) {
+    
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        background-size: cover;
+        background-position: top center;
+        transition: transform 1s ease ease-in-out;
+        padding: 15px 20px;
+       
+        
+       
+    }
+
+    .links {
+        margin-bottom: 10px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;        
+    
+    }
+
+    .links li {
+        margin: 1px 0px;
+        padding-right: 6%;
+        padding-left: 10%;
+        padding-top: 5%;
+        margin-bottom: 15px;
+     
+    }
+
+    .icon {
+        margin-right: 300px;
+        margin-bottom: -70px;     
+        
+    }
+
+    header {
+       
+        align-items: center;
+        flex-direction: column;
+        height: 150rem;
+
+      
+    }
+
+    header h1 {
+        font-size: 2rem;
+       
+    }
+
+    
+  .box-layout,
+  .box-layout2,
+  .box-layout3,
+  .box-layout4 {
+    width: 90%;
+    max-width: 400px;
+    margin-top: 200px;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+

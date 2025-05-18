@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    scroll-behavior: smooth;
+}
+
+/* Upper */
+.navbar {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(banner.jpg);
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 62px 15px;
+    z-index: 1000;
+    transition: all 2s;
+    animation: fadeIn 1.5s ease-out forwards;
+
+   
+}
+.navbar:hover{
+    background-image: url(cut1.gif);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.icon {
+    margin-left: 20px;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    border-radius: 10%;
+    padding: 5px;
+    background-image: url(Josh.png);
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    border-radius: 10%;
+    background-color: orange;
+    padding: 8%;
+  
+}
+
+.links li {
+    margin: 0px 15px;
+   
+}
+
+.links a:hover, .icon:hover  {
+    transform: scale(1.1);
+    color: blue;
+ 
+}
+
+/* Body */
+
+header {
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 10px solid black;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    animation: fadeIn 1.5s ease-in forwards;
+    box-shadow: 5px solid rgb(0, 0, 0);   
+    padding: 60px 10px;
+    background-image: url(backround.png);
+    width: 100%;
+    background-position: center;
+    background-image: cover; 
+    flex-direction: column;
+}
+
+
+#contact {
+  
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 200px;
+
+    
+}
+#contact p {
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+     
+    }
+  
+#contact h3 {
+    margin-top: -5%;
+}
+
+
+
+ .social-links {
+    margin-top: 10px;
+  
+
+ }
+
+ .social-links {
+    text-decoration: none;
+    color: #fff;
+    padding: 1px 0px;
+    margin: 1px;
+    border-radius:50%;
+    display:inline-block;
+    transition: transform 0.3s ease-in-out;
+   
+
+ }
+
+
+ .mail {
+    margin-right: 10px;
+    margin-bottom: 5px;
+ }
+
+ .facebook{
+    margin-left: 5px;
+ }
+.instagram{
+    margin-right: 5px;
+}
+
+.mail:hover{
+    transform: scale(1.1);
+}
+
+.facebook:hover {
+    transform: scale(1.1);
+}
+.instagram:hover {
+    transform: scale(1.1);
+}
+
+
+.messageme {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right,  #1d12e9, #cf771f);
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    
+    
+}
+
+.input, button{
+    background-color: #1d12e9;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 100px;
+    
+}
+.messageme textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    resize: vertical;
+}
+
+.messageme button {
+    padding: 10px 20px;
+    margin: 10px 5px 0;
+    background-color: #1d12e9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.messageme button:hover {
+    transform: scale(1.05);
+    background-color: #1408b5;
+}
+
+
+    
+    /* For Responsiveness */
+@media (max-width: 768px) {
+    
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        background-size: cover;
+        background-position: top center;
+        transition: transform 1s ease ease-in-out;
+        padding: 15px 20px;
+      
+       
+        
+       
+    }
+
+    .links {
+        margin-bottom: 10px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;        
+    
+    }
+
+    .links li {
+        margin: 1px 0px;
+        padding-right: 6%;
+        padding-left: 10%;
+        padding-top: 5%;
+        margin-bottom: 15px;
+     
+    }
+
+    .icon {
+        margin-right: 300px;
+        margin-bottom: -70px;     
+        
+    }
+
+    header {
+       
+        align-items: center;
+        flex-direction: column;
+        height: 90rem;
+        
+      
+    }
+
+    header h1 {
+        font-size: 2rem;
+       
+    }
+
+}
+
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+
+  }
+
+  .section img {
+    height: 200px;
+    
+  }
+
+  .download-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .box-layout, .box-layout1 {
+    margin: 100px auto;
+    width: 95%;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .messageme {
+    width: 300px;
+    padding: 15px;
+  }
+}
+       
